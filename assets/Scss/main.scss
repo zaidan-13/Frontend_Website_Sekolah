@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+$font-color: #ffffff;
+$font-color-secondary: #b6b6b6;
+$primary-color: #FFFBFB;
+$secondary-color:#f0f5f5;
+$bottom-color: #0193DC;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    min-height: 200px;
+}
+
+.navbar-brand{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.navbar-nav{
+    // margin-right: 8rem;
+    align-items: center;
+}
+.nav-link{
+    text-transform: uppercase;
+    margin-right: 30px;
+    font-size: .85rem;
+}
+
+.navbar-brand, .nav-item{
+    color: $font-color;
+}
+
+.nav-item:hover::after{
+    content: '';
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 2px $bottom-color solid;
+    width: 50%;
+    margin: auto;
+    margin-bottom: -7px;
+
+}
+.nav-item{
+    text-decoration: none;
+}
+
+/* jumbotron */
+.jumbotron{
+    background-image: url(../images/header.png);
+    background-size: cover;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.jumbotron .wrapper{
+    width: 100%;
+    padding-top: 16rem;
+    text-align: center;
+}
+
+.jumbotron , .display-4 , .lead{
+    font-size: clamp(.75rem, 10vw ,1.5rem);
+}
+
+.jumbotron .display-4{
+    color: $font-color;
+    font-weight: 700;
+    font-size: clamp(2.5rem,3.5vw,7rem);
+    margin-bottom: 2.7rem;
+}
+
+.jumbotron .lead {
+    font-family: 'Open Sans', sans-serif;
+    color: $font-color-secondary;
+    font-weight: 400;
+    line-height: clamp(.75rem, 150% ,4rem);
+}
+
+.jumbotron .lead:last-child{
+    margin-top: 2.7rem;
+}
+
+/* card profil */
+.card-profile .container{
+    height: 50vh !important;
+}
+
+.card{
+    margin: auto;
+    margin-top: 15% !important;
+    border-style: none;
+}
+
+.card .img-fluid{
+    width: 439px;
+    height: 325px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.card-body .card-title{
+    font-family: 'Open Snas' , sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-body .card-text{
+    font-family: 'Open Snas' , sans-serif;
+    font-weight: 400;
+}
+
+.card-body{
+    padding: 0;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-body .button-more p{
+    padding: .2rem 11.5rem;
+    margin: auto;
+}
+
+.table-profile{
+    margin-top: 5.5rem;
+    height: 100vh;
+    background-color: $secondary-color;
+}
+
+.table-container{
+    display: flex;
+    align-items: center;
+    padding-top: 8%;
+    gap: 10.5rem;
+}
+
+.table-main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.table-submain-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+
+.table-feature-content{
+    background-color: $primary-color;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.table-feature-content .feature-icon {
+    width: 40px;
+    margin-bottom: 2rem;
+}
+
+.table-feature-content .feature-title{
+    
+}
+
+.table-feature-content .feature-text{
+    color: $font-color-secondary;
+}
+
+.artikel{
+    margin-top: 9rem;
+}
+
+.artikel-header{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+
+
+
+
+/* Utility */
+.button {
+    border-radius: 12px;
+}
+
+.button-table{
+    padding: 0 8rem;
+}
+
+.button-table p{
+    margin: 0;
+    padding: .8rem;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+/* navbar */
+
+    
+}
